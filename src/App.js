@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Body from './components/Body';
 
-function App() {
+/**
+ * Header Component - logo, Navbar items
+ * Body
+ *  - search component - search input
+ *  - Restaurant container 
+ *      - restaurant card
+ *          - iamge, rating, cuisine, name, deleivry time, cost 
+ * Footer
+ *  - copyright
+ * - social media links
+ *  - contact 
+ *  address
+ */
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Body />
     </div>
   );
 }
