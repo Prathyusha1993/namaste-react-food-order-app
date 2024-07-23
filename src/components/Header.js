@@ -1,12 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../App.css';
+import { LOGO_URL } from '../utils/constants';
 
 const Header = () => {
 
   return (
     <div className='header'>
         <div className='logo-container'>
-            <img className='logo' src='https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?industry=COMPANY+NAME' alt='' />
+            <img className='logo' src={LOGO_URL} alt='logo' />
         </div>
         <div className='nav-items'>
             <ul>

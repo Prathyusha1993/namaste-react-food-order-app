@@ -1,4 +1,4 @@
-   const data = [
+   const resList = [
     {
         "id":1,
         "name":"Meghana Foods",
@@ -127,4 +127,4 @@
     }
 ];
 
-export default data;
+export default resList;

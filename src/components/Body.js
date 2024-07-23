@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import RestaurantCard from './RestaurantCard';
-import data from './FoodJsonData';
+import resList from './FoodJsonData';
 
 const Body = () => {
-    const [foodData, setFoodData] = useState(data);
+    const [foodData, setFoodData] = useState(resList);
     
   return (
     <div className='body'>

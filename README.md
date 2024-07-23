@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+/**
+ * Header Component - logo, Navbar items
+ * Body
+ *  - search component - search input
+ *  - Restaurant container 
+ *      - restaurant card
+ *          - iamge, rating, cuisine, name, deleivry time, cost 
+ * Footer
+ *  - copyright
+ * - social media links
+ *  - contact 
+ *  address
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:
