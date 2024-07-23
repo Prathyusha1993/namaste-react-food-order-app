@@ -1,13 +1,14 @@
 import React from 'react'
 
-const RestaurantCard = ({resName, cuisine}) => {
+const RestaurantCard = (props) => {
+    const {resName, cuisine, rating, time, image} = props;
     return (
         <div className='restaurant-card'>
-            <img className='res-logo' src='https://cookingfromheart.com/wp-content/uploads/2020/10/Avakaya-Biryani-4-500x500.jpg' alt='res-logo' />
+            <img className='res-logo' src={image} alt='res-logo' />
             <h3>{resName}</h3>
             <h4>{cuisine}</h4>
-            <h4>4.4 Stars</h4>
-            <h4>38 minutes</h4>
+            <h4>{rating}</h4>
+            <h4>{time}</h4>
         </div>
     )
 }
