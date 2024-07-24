@@ -16,6 +16,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  *  address
  */
 
+ /**
+ *Two types of Export/Import
+ * - Default Exxport/Import
+ *     - export default Component;
+*       - import Compoent from 'path';
+
+*  Named Export/Import;
+*       - export const Component;
+*       - import {Component} from 'path';
+ */
+
+ /**
+ * virtual DOM - react is doing effecient dom manipulation 
+ *reconciliation
+*  The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+update
+A change in the data used to render a React app. Usually the result of `setState`. Eventually results in a re-render.
+ * React uses reconciliation algorithm (React Fiber came into existing in react 16 version)
+ * diff algorithm means which identifies the difference between the previous virtual dom and new virtual dom and renders only the difference between two and then updates the dom
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:

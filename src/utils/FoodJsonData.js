@@ -124,6 +124,15 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "iamge":"https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000352/img/basic/a0000352_main.jpg"
+    },
+    {
+        "id":15,
+        "name":"Dosa Hut",
+        "cuisine": "South Asian",
+        "rating": "4.1",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹200",
+        "iamge":"https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg"
     }
 ];
 

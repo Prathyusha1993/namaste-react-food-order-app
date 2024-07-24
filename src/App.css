@@ -88,3 +88,8 @@
   width: 100%;
   object-fit: contain;
 }
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
+}
