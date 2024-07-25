@@ -64,6 +64,7 @@
 .restaurant-container {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .restaurant-card {
   width: 200px;

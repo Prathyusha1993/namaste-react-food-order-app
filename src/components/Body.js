@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
 import resList from '../utils/FoodJsonData';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 
 const Body = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -34,7 +35,7 @@ const Body = () => {
             </div>
             <div className='restaurant-container'>
                 {filteredRestaurant.map((food) => {
-                    return <RestaurantCard key={food.id} resName={food.name} cuisine={food.cuisine} rating={food.rating} time={food.deliveryTime} image={food.iamge} />
+                    return <Link style={{textDecoration:'none'}}  key={food.id} to={'/restaurants/'+food.id}><RestaurantCard resName={food.name} cuisine={food.cuisine} rating={food.rating} time={food.deliveryTime} image={food.iamge} /></Link>
                 })}
             </div>
         </div>

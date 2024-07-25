@@ -43,6 +43,10 @@ A change in the data used to render a React app. Usually the result of `setState
  * diff algorithm means which identifies the difference between the previous virtual dom and new virtual dom and renders only the difference between two and then updates the dom
  */
 
+ /**
+ * Two Types of routing: server side routing and client sode routing
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:
