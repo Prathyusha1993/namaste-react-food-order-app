@@ -30,7 +30,7 @@ const Body = () => {
                     <input className='search-box' type='text' value={searchInput} placeholder='Search...' onChange={(e) => setSearchInput(e.target.value)} />
                     <button onClick={() => {const filteredRes = foodData.filter((res) => res.name.toLowerCase().includes(searchInput));setFilteredRestaurant(filteredRes); setSearchInput('')}}>Search</button>
                 </div>
-                <button className='filter-btn' onClick={() => { setFoodData(foodData.filter((food) => food.rating > 4)) }}>Top Rated Restaurants</button>
+                <button className='filter-btn' onClick={() => {const topRated = foodData.filter((food) => food.rating > 4); setFilteredRestaurant(topRated)}}>Top Rated Restaurants</button>
             </div>
             <div className='restaurant-container'>
                 {filteredRestaurant.map((food) => {

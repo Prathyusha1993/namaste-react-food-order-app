@@ -28,6 +28,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  */
 
  /**
+ * useEffect - if no dependency array in useeffect,it renders every time 
+ * if dependency array is empty, useefeect is called on initial render (just once)
+ * if dependency array is there - called every time that dependency is updated.
+ */
+
+ /**
  * virtual DOM - react is doing effecient dom manipulation 
  *reconciliation
 *  The algorithm React uses to diff one tree with another to determine which parts need to be changed.

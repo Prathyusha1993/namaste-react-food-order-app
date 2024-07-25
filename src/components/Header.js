@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import '../App.css';
 import { LOGO_URL } from '../utils/constants';
 
 export const Header = () => {
   const [btnName, setBtnName] = useState('Login');
+
+  useEffect(() => {},[]);
 
   return (
     <div className='header'>
