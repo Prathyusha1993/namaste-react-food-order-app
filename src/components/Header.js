@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
 import { LOGO_URL } from '../utils/constants';
 
@@ -14,7 +14,7 @@ export const Header = () => {
         </div>
         <div className='nav-items'>
             <ul>
-                <li>Home</li>
+                <li> Home</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
                 <li>Cart</li>
