@@ -8,11 +8,6 @@ const Body = () => {
     const [searchInput, setSearchInput] = useState('');
     const [foodData, setFoodData] = useState(resList);
     const [filteredRestaurant, setFilteredRestaurant] = useState(resList);
-    //the aove line is nothing but array destructuring
-    // const arr = useState(resList);
-    // const [foodData, setFoodData] = arr;
-    //const foodData = arr[0];
-    //const setFoodData = arr[1];
 
     useEffect(() => {
         fetchData();
@@ -29,13 +24,13 @@ const Body = () => {
             <div className='filter'>
                 <div className='search'>
                     <input className='search-box' type='text' value={searchInput} placeholder='Search...' onChange={(e) => setSearchInput(e.target.value)} />
-                    <button onClick={() => {const filteredRes = foodData.filter((res) => res.name.toLowerCase().includes(searchInput));setFilteredRestaurant(filteredRes); setSearchInput('')}}>Search</button>
+                    <button onClick={() => { const filteredRes = foodData.filter((res) => res.name.toLowerCase().includes(searchInput)); setFilteredRestaurant(filteredRes); setSearchInput('') }}>Search</button>
                 </div>
-                <button className='filter-btn' onClick={() => {const topRated = foodData.filter((food) => food.rating > 4); setFilteredRestaurant(topRated)}}>Top Rated Restaurants</button>
+                <button className='filter-btn' onClick={() => { const topRated = foodData.filter((food) => food.rating > 4); setFilteredRestaurant(topRated) }}>Top Rated Restaurants</button>
             </div>
             <div className='restaurant-container'>
                 {filteredRestaurant.map((food) => {
-                    return <Link style={{textDecoration:'none'}}  key={food.id} to={'/restaurants/'+food.id}><RestaurantCard resName={food.name} cuisine={food.cuisine} rating={food.rating} time={food.deliveryTime} image={food.iamge} /></Link>
+                    return <Link style={{ textDecoration: 'none' }} key={food.id} to={'/restaurants/' + food.id}><RestaurantCard resName={food.name} cuisine={food.cuisine} rating={food.rating} cost={food.costForTwo} time={food.deliveryTime} image={food.iamge} /></Link>
                 })}
             </div>
         </div>

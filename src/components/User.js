@@ -1,7 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 
 const User = ({name}) => {
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+       const timer = setInterval(() => {
+            console.log('Namaste React')
+        }, 1000);
+        return() => {clearInterval(timer);
+            console.log('useEffect return')}
+    },[])
+    //if i dont put dependency array it willr ender every time
+    //if I put empty array it will render just once
+    //If i update dependency array with value it will render only when that value changes
+
   return (
     <div className='user-card'>
         <h1>Count: {count}</h1>

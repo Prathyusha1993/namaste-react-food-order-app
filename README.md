@@ -47,6 +47,47 @@ A change in the data used to render a React app. Usually the result of `setState
  * Two Types of routing: server side routing and client sode routing
  */
 
+ /**
+ * this is about array destructing in body.js file
+* const arr = useState(resList);
+* const [foodData, setFoodData] = arr;
+* const foodData = arr[0];
+* const set*Fo*odData = arr[1];
+*/
+
+
+/**
+ * from above code how the rendering happens 
+ * parent constructor
+ * parent render
+ * First child constructor
+ * First child render
+ * Second child constructor
+ * Second child render
+ * Third child constructor
+ * Third child render
+ * First componentDidMount
+ * Second componentDidMount
+ * Third componentDidMount
+ */
+
+/**
+* this is about class based components and how mounting, updating and unmounting works example is about.js file 
+ * constructor is called
+ * render methodis called
+ * ,html> is loaded with baisc data
+ * component did mount is called , we make an api call and get the data
+ * after that we update the state as this.setState  
+ * 
+ * ---------------till here its mounting state-----------------
+ * 
+ * now the update state begins
+ * render method is called again with api data to update it
+ * now html is loaded with new api data
+ * then it will call componentDidUpdate
+ * 
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:

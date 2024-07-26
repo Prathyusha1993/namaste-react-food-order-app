@@ -15,7 +15,7 @@
         "rating": "4.0",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹600",
-        "iamge":"https://vegconomist.com/wp-content/uploads/sites/3/Meat-Zero-KFC-973x1024.jpg"
+        "iamge":"https://vegconomist.com/wp-content/uploads/sites/3/Meat-Zero-KFC-973x1024.jpg",
     },
     {
         "id":3,
@@ -24,7 +24,8 @@
         "rating": "4.1",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹300",
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVssjlTD0F8nWrqblFYcFrgwZlwy7aGwAJQA&s"
+        "iamge":"https://thecurrymommy.com/wp-content/uploads/2021/09/vegan-momos-1200.jpg"
+       
     },
     {
         "id":4,
@@ -33,7 +34,7 @@
         "rating": "4.2",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹800",
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAuPL8vte4MuDzZN8eY9UDLKOdB74mUUhQoA&s"
+        "iamge":"https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/12/greek-pizza-21-001.jpg"
     },
     {
         "id":5,
@@ -60,7 +61,7 @@
         "rating": "4.0",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://www.blessthismessplease.com/wp-content/uploads/2015/05/cream-puff-recipe-2.jpg"
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHesN-oIEH25g-AAM8m0l_5xi6G8hpPrAHwOyc13RB3smH4n4e90UFd_Mb2FxFD_MSAv0&usqp=CAU"
     },
     {
         "id":8,
@@ -69,7 +70,7 @@
         "rating": "4.5",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://migrationology.com/wp-content/uploads/2014/02/ethiopian-food.jpg"
+        "iamge":"https://i.redd.it/qa5htp5xg0y91.jpg"
     },
     {
         "id":9,
@@ -78,7 +79,7 @@
         "rating": "3.5",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://media.cnn.com/api/v1/images/stellar/prod/151215114545-40-thai-food-27-som-tam-1.jpg?q=w_1900,h_1096,x_0,y_0,c_fill"
+        "iamge":"https://therecipewell.com/wp-content/uploads/2020/05/Instant-Pot-Chicken-Pad-Thai-Feature-3-500x500.jpg"
     },
     {
         "id":10,
@@ -87,7 +88,7 @@
         "rating": "4.5",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2022/07/07/GettyImages-1353886090_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1657224547659.jpeg"
+        "iamge":"https://flavorverse.com/wp-content/uploads/2022/04/Sweet-and-Sour-Chicken.jpg"
     },
     {
         "id":11,
@@ -96,7 +97,7 @@
         "rating": "3.9",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsx8g11Tazb1ENNS-axEmJsNT-Yb329ZqN3Q&s"
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Mf7g6DkFkbwwoHE3EYudZUQCG4xMgUsEZQ&s"
     },
     {
         "id":12,
@@ -105,7 +106,7 @@
         "rating": "4.9",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9SpIIKsSq6WNp8NXWksekYA0fGx71aC3sg&s"
+        "iamge":"https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS-1.jpg"
     },
     {
         "id":13,
@@ -123,7 +124,7 @@
         "rating": "3.6",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
-        "iamge":"https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000352/img/basic/a0000352_main.jpg"
+        "iamge":"https://www.theflavorbender.com/wp-content/uploads/2019/01/Easy-Chicken-Ramen-Featured.jpg"
     },
     {
         "id":15,
@@ -132,8 +133,12 @@
         "rating": "4.1",
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹200",
-        "iamge":"https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg"
+        "iamge":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dosa-recipe.jpg"
+        
     }
 ];
 
 export default resList;
+
+// https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg
+// https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVssjlTD0F8nWrqblFYcFrgwZlwy7aGwAJQA&s
