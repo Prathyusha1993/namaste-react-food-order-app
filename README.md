@@ -28,7 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  */
 
  /**
- * useEffect - if no dependency array in useeffect,it renders every time 
+ * useEffect - if no dependency array in useeffect,it renders every time means both after initial render and after every subsquential render.
  * if dependency array is empty, useefeect is called on initial render (just once)
  * if dependency array is there - called every time that dependency is updated.
  */
