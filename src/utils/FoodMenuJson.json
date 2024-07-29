@@ -1,0 +1,276 @@
+
+{
+"resMenu": [
+    {
+        "id":1,
+        "name":"Meghana Foods",
+        "cuisines": ["South Indian, North Indian, Asian"],
+        "rating": "4.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-006.jpg",
+        "itemCards": 
+        [
+            {"name": "Lemon Rice", "price": 120, "description": "Serves 1"},
+            {"name": "Biryani with Chicken kabob", "price": 220, "description": "Serves 2" },
+            {"name": "Vegetable Biryani", "price": 180, "description": "Serves 1" },
+            {"name": "Peas Pulav", "price": 140, "description": "Serves 1" },
+            {"name": "Mutton Biryani", "price": 220, "description": "Serves 1" },
+            {"name": "Prawns Biryani", "price": 250, "description": "Serves 1" },
+            {"name": "Fish Biryani", "price": 230, "description": "Serves 1" }
+        ]
+    },
+    {
+        "id":2,
+        "name":"KFC",
+        "cuisines": ["Fast Foods"],
+        "rating": "4.0",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹600",
+        "iamge":"https://vegconomist.com/wp-content/uploads/sites/3/Meat-Zero-KFC-973x1024.jpg",
+        "itemCards": [
+            {"name": "Chicken Fry", "price": 220, "description": "Serves 2"  },
+            {"name": "Chicken Grill", "price": 220, "description": "Serves 2"  },
+            {"name": "Chicken Kabob", "price": 220, "description": "Serves 2"  },
+            {"name": "Smoked Chicken Grill", "price": 220, "description": "Serves 2"  },
+            {"name": "Masala Fries", "price": 220, "description": "Serves 2"  },
+            {"name": "French Fries", "price": 220, "description": "Serves 2"  },
+            {"name": "Coke", "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":3,
+        "name":"Katmandu Momos",
+        "cuisines": ["Nepali, Chinese"],
+        "rating": "4.1",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹300",
+        "iamge":"https://thecurrymommy.com/wp-content/uploads/2021/09/vegan-momos-1200.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala", "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan", "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis", "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan", "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry", "price": 220, "description": "Serves 2" }
+        ]
+    },
+    {
+        "id":4,
+        "name":"Curry Pizza",
+        "cuisines": ["Italian"],
+        "rating": "4.2",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹800",
+        "iamge":"https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/12/greek-pizza-21-001.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala", "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan", "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis", "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2" },
+            {"name": "Bamboo Curry", "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":5,
+        "name":"Paradise",
+        "cuisines": ["South Indian, Biryani, Asian"],
+        "rating": "4.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmL-wW82KGwI4HHCklJuOMFRFJDygcSAPbtQ&s",
+        "itemCards": [
+            {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala", "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan", "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2" },
+            {"name": "Butter Naan", "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2" }
+        ]
+    },
+    {
+        "id":6,
+        "name":"Cakes N Bakes",
+        "cuisines": ["South Indian Snacks, Bakery"],
+        "rating": "4.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uwMHeR0jpyDB0JWAF0P1vupAH41Jdq3jmQ&s",
+        "itemCards": [
+            {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2" },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2" },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2" },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2" },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2" },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2" }
+        ]
+    },
+    {
+        "id":7,
+        "name":"85 degree",
+        "cuisines": ["American Bakery"],
+        "rating": "4.0",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHesN-oIEH25g-AAM8m0l_5xi6G8hpPrAHwOyc13RB3smH4n4e90UFd_Mb2FxFD_MSAv0&usqp=CAU",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":8,
+        "name":"Haleluya Ethiopian Gourmet",
+        "cuisines": ["Ethiopian"],
+        "rating": "4.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://i.redd.it/qa5htp5xg0y91.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",   "price": 220, "description": "Serves 2" },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":9,
+        "name":"Sala Thai Kichen",
+        "cuisines": ["Thai"],
+        "rating": "3.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://therecipewell.com/wp-content/uploads/2020/05/Instant-Pot-Chicken-Pad-Thai-Feature-3-500x500.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":10,
+        "name":"Panda Food Express",
+        "cuisines": ["Chinese"],
+        "rating": "4.5",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://flavorverse.com/wp-content/uploads/2022/04/Sweet-and-Sour-Chicken.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":11,
+        "name":"Sushi Ken",
+        "cuisines": ["Japanese"],
+        "rating": "3.9",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Mf7g6DkFkbwwoHE3EYudZUQCG4xMgUsEZQ&s",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",   "price": 220, "description": "Serves 2" },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":12,
+        "name":"Rajwadi Thali",
+        "cuisines": ["North Indian"],
+        "rating": "4.9",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS-1.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",   "price": 220, "description": "Serves 2" },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":13,
+        "name":"Banana Leaf",
+        "cuisines": ["Malaysian, South Indian"],
+        "rating": "3.9",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://www.beyondkimchee.com/wp-content/uploads/2022/06/Pineapple-Fried-Rice-thumbnail-1.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",  "price": 220, "description": "Serves 2"  }
+        ]
+    },
+    {
+        "id":14,
+        "name":"Ramen Shu",
+        "cuisines": ["Japanese"],
+        "rating": "3.6",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹500",
+        "iamge":"https://www.theflavorbender.com/wp-content/uploads/2019/01/Easy-Chicken-Ramen-Featured.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",   "price": 220, "description": "Serves 2" }
+        ]
+    },
+    {
+        "id":15,
+        "name":"Dosa Hut",
+        "cuisines": ["South Asian"],
+        "rating": "4.1",
+        "deliveryTime": "30-40 mins",
+        "costForTwo": "₹200",
+        "iamge":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dosa-recipe.jpg",
+        "itemCards": [
+            {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
+            {"name": "Chana Masala",  "price": 220, "description": "Serves 2"  },
+            {"name": "Garlic Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Rotis",  "price": 220, "description": "Serves 2"  },
+            {"name": "Butter Naan",  "price": 220, "description": "Serves 2"  },
+            {"name": "Bamboo Curry",   "price": 220, "description": "Serves 2" }
+        ]
+    }
+]
+}

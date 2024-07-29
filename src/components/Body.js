@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
 import resList from '../utils/FoodJsonData';
+import data from '../utils/FoodMenuJson.json';
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
 
 const Body = () => {
     const [searchInput, setSearchInput] = useState('');
-    const [foodData, setFoodData] = useState(resList);
-    const [filteredRestaurant, setFilteredRestaurant] = useState(resList);
+    const [foodData, setFoodData] = useState(data.resMenu);
+    const [filteredRestaurant, setFilteredRestaurant] = useState(data.resMenu);
 
     useEffect(() => {
         fetchData();

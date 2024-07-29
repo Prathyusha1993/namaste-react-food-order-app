@@ -1,12 +1,15 @@
-import React, {useState,useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Shimmer from './Shimmer';
-import resMenu from '../utils/FoodMenuJson';
+import data from '../utils/FoodMenuJson.json';
 import { useParams } from 'react-router-dom';
 
 const RestaurantMenu = () => {
-    const [resInfo, setResInfo] = useState(resMenu);
 
     const {resId} = useParams();
+
+    const resMenuData = data.resMenu.find((res) => res.id.toString() === resId);
+
+    // const resInfo = useRestaurantMenu(resId);
 
     useEffect(() => {
         fetchMenu()
@@ -18,38 +21,21 @@ const RestaurantMenu = () => {
         console.log(json);
     };
 
-    if(resInfo.length === 0){
+    if(resMenuData.length === 0){
         return <Shimmer />;
     };
-    console.log(resMenu);
-
-    const {name, cuisines, costForTwo} = resInfo[0];
+    console.log('resMenuData data', resMenuData);
 
   return (
     <div className='menu'>
-        <h1>{name}</h1>
-        <h2>Menu</h2>
-        <p>{cuisines.join(", ")} - {costForTwo}</p>
-        <ul>
-            {resMenu[0]?.itemCards.map((item) => {
-                return (
-                    <li key={item.id}>{item.name} - {item.price}</li>
-                )
-            })}
-        </ul>
-
-        {/* {resMenu?.map((item) => {
-            return (
-                <div>
-                <h1>{item.name}</h1>
-                <h3>Menu</h3>
-                <p>{item.cuisines} - {item.costForTwo}</p>
-                <ul>
-                    <li>{item.itemCards[0].name} - {item.itemCards[0].price}</li>
-                </ul>
-                </div>
-            )
-        })} */}
+       <h1>{resMenuData.name}</h1>
+       <h2>Menu</h2>
+       <p>{resMenuData.cuisines} - {resMenuData.costForTwo} For Two.</p>
+       <ul>
+        {resMenuData.itemCards.map((item) => (
+            <li>{item.name} - {item.price} - {item.description}.</li>
+        ))}
+       </ul>
     </div>
   )
 }
