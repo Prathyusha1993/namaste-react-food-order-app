@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
-import resList from '../utils/FoodJsonData';
 import data from '../utils/FoodMenuJson.json';
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 const Body = () => {
     const [searchInput, setSearchInput] = useState('');
@@ -18,7 +18,11 @@ const Body = () => {
         const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.9615398&lng=79.2961468&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
         const json = await data.json();
         console.log(json);
-    }
+    };
+
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false) return (<h1>Looks like you're offline!! please chcek your network connection.</h1>)
+
 
     return foodData.length === 0 ? (<Shimmer />) : (
         <div className='body'>
