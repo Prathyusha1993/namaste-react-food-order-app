@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+// import { MdDarkMode } from "react-icons/md";
+// import { MdLightMode } from "react-icons/md";
 import '../App.css';
 import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
@@ -6,24 +8,31 @@ import useOnlineStatus from '../utils/useOnlineStatus';
 
 export const Header = () => {
   const [btnName, setBtnName] = useState('Login');
+  // const [mode, setMode] = useState(false);
   const onlineStatus = useOnlineStatus();
 
   useEffect(() => {},[]);
 
+  // const darkModeHandler = () => {
+  //   setMode(!mode);
+  //   document.body.classList.toggle('mode');
+  // }
+
   return (
-    <div className='header'>
+    <div className='flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-green-50'>
         <div className='logo-container'>
-            <img className='logo' src={LOGO_URL} alt='logo' />
+            <img className='w-24' src={LOGO_URL} alt='logo' />
         </div>
-        <div className='nav-items'>
-            <ul>
-                <li>Online Status: {onlineStatus ? "✅" : "🛑"}</li>
-                <li><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> </li>
-                <li><Link style={{textDecoration: 'none'}}  to='/about'>About Us</Link></li>
-                <li><Link style={{textDecoration: 'none'}}  to='/contact'>Contact Us</Link></li>
-                <li><Link style={{textDecoration: 'none'}}  to='/grocery'>Grocery</Link></li>
-                <li><Link style={{textDecoration: 'none'}}  to='/cart'>Cart</Link></li>
-                <button className='login' onClick={() => {btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>{btnName}</button>
+        <div className='flex items-center'>
+            <ul className='flex'>
+              {/* <li><button onClick={() => darkModeHandler()}>{mode && <MdLightMode />}{!mode && <MdDarkMode />}</button></li> */}
+                <li className='px-4'>Online Status: {onlineStatus ? "✅" : "🛑"}</li>
+                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> </li>
+                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/about'>About Us</Link></li>
+                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/contact'>Contact Us</Link></li>
+                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/grocery'>Grocery</Link></li>
+                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/cart'>Cart</Link></li>
+                <li className='px-4'><button className='login' onClick={() => {btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>{btnName}</button></li>
             </ul>
         </div>
     </div>

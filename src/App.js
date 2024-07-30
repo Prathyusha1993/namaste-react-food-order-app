@@ -13,7 +13,7 @@ const About = lazy(() => import('./components/About'));
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="mode:bg-blue-900">
       <Header />
       <Outlet />
     </div>

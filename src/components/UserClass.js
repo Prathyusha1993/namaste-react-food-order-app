@@ -25,11 +25,11 @@ class UserClass extends Component {
         console.log(this.props.name +'child render');
         const {name, location, contact,image} = this.props;
         return (
-            <div className='user-card'>
-                <img src={image} alt=''/>
-                <h2>Name: {name}</h2>
-                <h3>Location: {location}</h3>
-                <h4>Contact: {contact}</h4>
+            <div className='py-4 m-4'>
+                <img className='w-80' src={image} alt=''/>
+                <h2 className='text-lg'>Name: {name}</h2>
+                <h3 className='text-lg'>Location: {location}</h3>
+                <h4 className='text-lg'>Contact: {contact}</h4>
             </div>
         );
     }

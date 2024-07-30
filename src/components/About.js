@@ -23,8 +23,8 @@ class About extends Component {
     const {name, location, login, avatar_url} = this.state.userInfo;
     return (
       <div>
-          <h1>About</h1>
-          <h1>Namaste React Web Series</h1>
+          <h1 className='font-bold text-lg py-4'>About Page</h1>
+          <h1 className='font-bold text-md'>Namaste React Web Series</h1>
           {/* <User /> */}
           <UserClass name={name}
           location={location} contact={login} image={avatar_url} />
