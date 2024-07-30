@@ -88,6 +88,14 @@ A change in the data used to render a React app. Usually the result of `setState
  * 
  */
 
+ /*
+ * chunking
+ * code splitting
+ * lazy loading
+ * dynamic bundling 
+ * all this above points are called on demand loading
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:
