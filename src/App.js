@@ -3,12 +3,10 @@ import React, { lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-// import About from './components/About';
 import Contact from './components/Contact';
 import Cart from './components/Cart';
 import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
-// import Grocery from './components/Grocery';
 
 const Grocery = lazy(() => import('./components/Grocery'));
 const About = lazy(() => import('./components/About'));

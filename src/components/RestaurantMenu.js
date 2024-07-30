@@ -33,7 +33,7 @@ const RestaurantMenu = () => {
        <p>{resMenuData.cuisines} - {resMenuData.costForTwo} For Two.</p>
        <ul>
         {resMenuData.itemCards.map((item) => (
-            <li>{item.name} - {item.price} - {item.description}.</li>
+            <li key={item.name}>{item.name} - {item.price} - {item.description}.</li>
         ))}
        </ul>
     </div>
