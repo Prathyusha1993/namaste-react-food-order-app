@@ -48,13 +48,13 @@ const Body = () => {
                             rating={food.rating}
                             cost={food.costForTwo}
                             time={food.deliveryTime}
-                            image={food.iamge} />) : (<RestaurantCard 
+                            image={food.image} />) : (<RestaurantCard 
                             resName={food.name}
                             cuisine={food.cuisine}
                             rating={food.rating}
                             cost={food.costForTwo}
                             time={food.deliveryTime}
-                            image={food.iamge} />)}
+                            image={food.image} />)}
                         
                     </Link>
                 })}

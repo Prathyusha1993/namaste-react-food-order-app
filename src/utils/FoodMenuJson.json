@@ -9,17 +9,35 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": true,
-        "iamge":"https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-006.jpg",
-        "itemCards": 
-        [
-            {"name": "Lemon Rice", "price": 120, "description": "Serves 1"},
-            {"name": "Biryani with Chicken kabob", "price": 220, "description": "Serves 2" },
-            {"name": "Vegetable Biryani", "price": 180, "description": "Serves 1" },
-            {"name": "Peas Pulav", "price": 140, "description": "Serves 1" },
-            {"name": "Mutton Biryani", "price": 220, "description": "Serves 1" },
-            {"name": "Prawns Biryani", "price": 250, "description": "Serves 1" },
-            {"name": "Fish Biryani", "price": 230, "description": "Serves 1" }
-        ]
+        "image":"https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-006.jpg",
+        "cards": [{
+            "title": "Recommended",
+            "type":"category_type_recommend",
+            "itemCards": [
+                {"name": "Chicken Biryani", "price": 220, "description": "Serves 1 | Medium Spicy | chicken biryani | made with chicken, rice, spices, oil and steam eveything.", "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe-500x375.jpg"},
+                {"name": "Mutton Biryani", "price": 220, "description": "Serves 2" },
+                {"name": "Prawns Biryani", "price": 250, "description": "Serves 2" }
+            ]
+        },
+        {
+            "title": "Mains",
+            "type": "category_type_mains",
+            "itemCards": [
+                {"name": "Chicken Biryani", "price": 220, "description": "Serves 2" },
+                {"name": "Mutton Biryani", "price": 220, "description": "Serves 2" },
+                {"name": "Prawns Biryani", "price": 250, "description": "Serves 2" }
+            ]
+        },
+        {
+            "title": "Starters",
+            "type": "category_type_starters",
+            "itemCards": [
+                {"name": "Chicken Biryani", "price": 220, "description": "Serves 2" },
+                {"name": "Mutton Biryani", "price": 220, "description": "Serves 2" },
+                {"name": "Prawns Biryani", "price": 250, "description": "Serves 2" }
+            ]
+        }
+    ]
     },
     {
         "id":2,
@@ -29,7 +47,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹600",
         "promoted": false,
-        "iamge":"https://vegconomist.com/wp-content/uploads/sites/3/Meat-Zero-KFC-973x1024.jpg",
+        "image":"https://vegconomist.com/wp-content/uploads/sites/3/Meat-Zero-KFC-973x1024.jpg",
         "itemCards": [
             {"name": "Chicken Fry", "price": 220, "description": "Serves 2"  },
             {"name": "Chicken Grill", "price": 220, "description": "Serves 2"  },
@@ -48,7 +66,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹300",
         "promoted": true,
-        "iamge":"https://thecurrymommy.com/wp-content/uploads/2021/09/vegan-momos-1200.jpg",
+        "image":"https://thecurrymommy.com/wp-content/uploads/2021/09/vegan-momos-1200.jpg",
         "itemCards": [
             {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
@@ -67,7 +85,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹800",
         "promoted": false,
-        "iamge":"https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/12/greek-pizza-21-001.jpg",
+        "image":"https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/12/greek-pizza-21-001.jpg",
         "itemCards": [
             {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
@@ -86,7 +104,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmL-wW82KGwI4HHCklJuOMFRFJDygcSAPbtQ&s",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmL-wW82KGwI4HHCklJuOMFRFJDygcSAPbtQ&s",
         "itemCards": [
             {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos", "price": 220, "description": "Serves 2"  },
@@ -105,7 +123,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uwMHeR0jpyDB0JWAF0P1vupAH41Jdq3jmQ&s",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uwMHeR0jpyDB0JWAF0P1vupAH41Jdq3jmQ&s",
         "itemCards": [
             {"name": "Paneer Momos", "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2" },
@@ -124,7 +142,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHesN-oIEH25g-AAM8m0l_5xi6G8hpPrAHwOyc13RB3smH4n4e90UFd_Mb2FxFD_MSAv0&usqp=CAU",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHesN-oIEH25g-AAM8m0l_5xi6G8hpPrAHwOyc13RB3smH4n4e90UFd_Mb2FxFD_MSAv0&usqp=CAU",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -143,7 +161,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": true,
-        "iamge":"https://i.redd.it/qa5htp5xg0y91.jpg",
+        "image":"https://i.redd.it/qa5htp5xg0y91.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -162,7 +180,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": true,
-        "iamge":"https://therecipewell.com/wp-content/uploads/2020/05/Instant-Pot-Chicken-Pad-Thai-Feature-3-500x500.jpg",
+        "image":"https://therecipewell.com/wp-content/uploads/2020/05/Instant-Pot-Chicken-Pad-Thai-Feature-3-500x500.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -181,7 +199,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://flavorverse.com/wp-content/uploads/2022/04/Sweet-and-Sour-Chicken.jpg",
+        "image":"https://flavorverse.com/wp-content/uploads/2022/04/Sweet-and-Sour-Chicken.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -200,7 +218,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Mf7g6DkFkbwwoHE3EYudZUQCG4xMgUsEZQ&s",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Mf7g6DkFkbwwoHE3EYudZUQCG4xMgUsEZQ&s",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -219,7 +237,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": true,
-        "iamge":"https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS-1.jpg",
+        "image":"https://www.nehascookbook.com/wp-content/uploads/2022/09/Punjabi-thali-WS-1.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",   "price": 220, "description": "Serves 2" },
@@ -238,7 +256,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://www.beyondkimchee.com/wp-content/uploads/2022/06/Pineapple-Fried-Rice-thumbnail-1.jpg",
+        "image":"https://www.beyondkimchee.com/wp-content/uploads/2022/06/Pineapple-Fried-Rice-thumbnail-1.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -257,7 +275,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹500",
         "promoted": false,
-        "iamge":"https://www.theflavorbender.com/wp-content/uploads/2019/01/Easy-Chicken-Ramen-Featured.jpg",
+        "image":"https://www.theflavorbender.com/wp-content/uploads/2019/01/Easy-Chicken-Ramen-Featured.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },
@@ -276,7 +294,7 @@
         "deliveryTime": "30-40 mins",
         "costForTwo": "₹200",
         "promoted": true,
-        "iamge":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dosa-recipe.jpg",
+        "image":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/dosa-recipe.jpg",
         "itemCards": [
             {"name": "Paneer Momos",  "price": 220, "description": "Serves 2"  },
             {"name": "Vegetable Momos",  "price": 220, "description": "Serves 2"  },

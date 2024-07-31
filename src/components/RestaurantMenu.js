@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Shimmer from './Shimmer';
 import data from '../utils/FoodMenuJson.json';
 import { useParams } from 'react-router-dom';
+import RestaurantCategory from './RestaurantCategory';
 
 const RestaurantMenu = () => {
 
@@ -31,8 +32,9 @@ const RestaurantMenu = () => {
        <h1 className='font-bold my-7 text-2xl'>{resMenuData.name}</h1>
        <p className='font-bold text-lg'>{resMenuData.cuisines} Cuisine - {resMenuData.costForTwo} For Two.</p>
        <ul>
-        {resMenuData.itemCards.map((item) => (
-            <li className='p-4' key={item.name}>{item.name} - {item.price} - {item.description}.</li>
+        {resMenuData.cards?.map((categoryItem) => (
+            <RestaurantCategory categoryItem={categoryItem} />
+            // <li className='p-4' key={item.name}>{item.name} - {item.price} - {item.description}.</li>
         ))}
        </ul>
     </div>
