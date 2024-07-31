@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RestaurantCard from './RestaurantCard';
+import RestaurantCard, {withPromotedLabel} from './RestaurantCard';
 import data from '../utils/FoodMenuJson.json';
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
@@ -7,8 +7,9 @@ import useOnlineStatus from '../utils/useOnlineStatus';
 
 const Body = () => {
     const [searchInput, setSearchInput] = useState('');
-    const [foodData, setFoodData] = useState(data.resMenu);
+    const [foodData] = useState(data.resMenu);
     const [filteredRestaurant, setFilteredRestaurant] = useState(data.resMenu);
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
     useEffect(() => {
         fetchData();
@@ -28,14 +29,34 @@ const Body = () => {
         <div className='body'>
             <div className='filter flex'>
                 <div className='search m-4 p-4'>
-                    <input className='border border-solid border-black' type='text' value={searchInput} placeholder='Search...' onChange={(e) => setSearchInput(e.target.value)} />
-                    <button className='px-4 py-1  bg-green-100 m-4 rounded-lg' onClick={() => { const filteredRes = foodData.filter((res) => res.name.toLowerCase().includes(searchInput)); setFilteredRestaurant(filteredRes); setSearchInput('') }}>Search</button>
+                    <input className='border border-solid border-black'
+                        type='text' value={searchInput}
+                        placeholder='Search...'
+                        onChange={(e) => setSearchInput(e.target.value)} />
+                    <button className='px-4 py-1  bg-green-100 m-4 rounded-lg'
+                        onClick={() => { const filteredRes = foodData.filter((res) => res.name.toLowerCase().includes(searchInput)); setFilteredRestaurant(filteredRes); setSearchInput('') }}>
+                        Search</button>
                 </div >
                 <div className='search m-4 p-4 flex items-center'><button className='px-4 py-2 bg-gray-100 rounded-lg' onClick={() => { const topRated = foodData.filter((food) => food.rating > 4); setFilteredRestaurant(topRated) }}>Top Rated Restaurants</button></div>
             </div>
             <div className='flex flex-wrap'>
                 {filteredRestaurant.map((food) => {
-                    return <Link style={{ textDecoration: 'none' }} key={food.id} to={'/restaurants/' + food.id}><RestaurantCard resName={food.name} cuisine={food.cuisine} rating={food.rating} cost={food.costForTwo} time={food.deliveryTime} image={food.iamge} /></Link>
+                    return <Link style={{ textDecoration: 'none' }} key={food.id} to={'/restaurants/' + food.id}>
+                        {food.promoted ? (<RestaurantCardPromoted 
+                            resName={food.name}
+                            cuisine={food.cuisine}
+                            rating={food.rating}
+                            cost={food.costForTwo}
+                            time={food.deliveryTime}
+                            image={food.iamge} />) : (<RestaurantCard 
+                            resName={food.name}
+                            cuisine={food.cuisine}
+                            rating={food.rating}
+                            cost={food.costForTwo}
+                            time={food.deliveryTime}
+                            image={food.iamge} />)}
+                        
+                    </Link>
                 })}
             </div>
         </div>

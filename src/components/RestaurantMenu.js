@@ -27,13 +27,12 @@ const RestaurantMenu = () => {
     console.log('resMenuData data', resMenuData);
 
   return (
-    <div className='menu'>
-       <h1>{resMenuData.name}</h1>
-       <h2>Menu</h2>
-       <p>{resMenuData.cuisines} - {resMenuData.costForTwo} For Two.</p>
+    <div className='text-center'>
+       <h1 className='font-bold my-7 text-2xl'>{resMenuData.name}</h1>
+       <p className='font-bold text-lg'>{resMenuData.cuisines} Cuisine - {resMenuData.costForTwo} For Two.</p>
        <ul>
         {resMenuData.itemCards.map((item) => (
-            <li key={item.name}>{item.name} - {item.price} - {item.description}.</li>
+            <li className='p-4' key={item.name}>{item.name} - {item.price} - {item.description}.</li>
         ))}
        </ul>
     </div>

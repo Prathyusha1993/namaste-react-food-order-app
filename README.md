@@ -96,6 +96,10 @@ A change in the data used to render a React app. Usually the result of `setState
  * all this above points are called on demand loading
  */
 
+ /**
+ * Higher Order components: takes input as components and returns a component
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:
