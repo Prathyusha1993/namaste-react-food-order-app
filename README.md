@@ -100,6 +100,18 @@ A change in the data used to render a React app. Usually the result of `setState
  * Higher Order components: takes input as components and returns a component
  */
 
+ /**
+ * Redux Tool Kit:
+ * when we hit the add button, it dispatches the actions which calls the reducer function which updates the slice of our redux store (written the data)
+ * to read the written data we use selector
+ * install redux/toolkit and reac-redux
+ * build the store
+ * connecct our store to app
+ * cearte slice
+ * dispatch action
+ * selector
+ */
+
 ## Available Scripts
 
 In the project directory, you can run:

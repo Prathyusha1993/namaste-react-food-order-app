@@ -1,6 +1,20 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import {addItems, removeItems} from '../utils/cartSlice';
 
 const CategoryItemList = ({ items }) => {
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = (item) => {
+        //dispatch an action
+        dispatch(addItems(item));
+    };
+
+    const handleRemoveItem = (item) => {
+        dispatch(removeItems(item));
+    }
+
     console.log(items);
     return (
         <div>
@@ -16,7 +30,10 @@ const CategoryItemList = ({ items }) => {
                     </div>
                     <div className='w-2/12'>
                     <div className='absolute'>
-                            <button className='bg-black text-white text-sm shadow-lg rounded-lg mx-11 px-1s' >ADD + </button>
+                            <button className='bg-black text-white text-sm shadow-lg rounded-lg mx-4 px-1' 
+                            onClick={() => handleAddItem(item)} > + </button>
+                            <button className='bg-black text-white text-sm shadow-lg rounded-lg mx-4 px-1' 
+                            onClick={() => handleRemoveItem(item)} > - </button>
                         </div>
                         <img src={item.image} alt='' className='w-full' />
                     </div>

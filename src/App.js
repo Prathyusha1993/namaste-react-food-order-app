@@ -8,6 +8,8 @@ import Cart from './components/Cart';
 import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
 import UserContext from './utils/UserContext';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
 
 const Grocery = lazy(() => import('./components/Grocery'));
 const About = lazy(() => import('./components/About'));
@@ -19,9 +21,11 @@ const App = () => {
     //make an api call get userinfo data and update it
     const data = {name: 'Prathyusha Kurigala'};
     setUserName(data.name);
-  })
+  }, []);
+
   return (
-    <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
     <div className='app'>
       <Header />
       <Outlet />
@@ -33,6 +37,8 @@ const App = () => {
       <Outlet /> */}
     </div>
     </UserContext.Provider>
+    </Provider>
+    
   );
 };
 

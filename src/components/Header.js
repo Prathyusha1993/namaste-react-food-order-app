@@ -6,6 +6,7 @@ import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import UserContext from '../utils/UserContext';
+import { useSelector } from 'react-redux';
 
 export const Header = () => {
   const [btnName, setBtnName] = useState('Login');
@@ -13,6 +14,8 @@ export const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   const {loggedInUser} = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   useEffect(() => {},[]);
 
@@ -30,11 +33,11 @@ export const Header = () => {
             <ul className='flex'>
               {/* <li><button onClick={() => darkModeHandler()}>{mode && <MdLightMode />}{!mode && <MdDarkMode />}</button></li> */}
                 <li className='px-4'>Online Status: {onlineStatus ? "✅" : "🛑"}</li>
-                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> </li>
-                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/about'>About Us</Link></li>
-                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/contact'>Contact Us</Link></li>
-                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/grocery'>Grocery</Link></li>
-                <li className='px-4'><Link style={{textDecoration: 'none'}}  to='/cart'>Cart</Link></li>
+                <li className='px-4'><Link to='/'>Home</Link> </li>
+                <li className='px-4'><Link to='/about'>About Us</Link></li>
+                <li className='px-4'><Link to='/contact'>Contact Us</Link></li>
+                <li className='px-4'><Link to='/grocery'>Grocery</Link></li>
+                <li className='px-4'><Link to='/cart'>🛒 ({cartItems.length} items)</Link></li>
                 <li className='px-4'><button className='login' onClick={() => {btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>{btnName}</button></li>
                 <li className='p-4 font-bold'>{loggedInUser}</li>
             </ul>

@@ -41,8 +41,8 @@ const Body = () => {
                 </div >
                 <div className='search m-4 p-4 flex items-center'><button className='px-4 py-2 bg-gray-100 rounded-lg' onClick={() => { const topRated = foodData.filter((food) => food.rating > 4); setFilteredRestaurant(topRated) }}>Top Rated Restaurants</button></div>
                 <div className='search m-4 p-4 flex items-center'>
-                    <label>User Name : </label>
-                    <input className='border border-black p-2 rounded-lg' type='text' value={loggedInUser} onChange={(e) =>setUserName(e.target.value)}/>
+                    <label>UserName : </label>
+                    <input className='border border-black p-2 rounded-lg' value={loggedInUser} onChange={(e) => setUserName(e.target.value)}/>
                 </div>
             </div>
             <div className='flex flex-wrap'>
