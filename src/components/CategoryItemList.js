@@ -16,7 +16,7 @@ const CategoryItemList = ({ items }) => {
                     </div>
                     <div className='w-2/12'>
                     <div className='absolute'>
-                            <button className='bg-black text-white shadow-lg rounded-lg mx-11 px-1s' >ADD + </button>
+                            <button className='bg-black text-white text-sm shadow-lg rounded-lg mx-11 px-1s' >ADD + </button>
                         </div>
                         <img src={item.image} alt='' className='w-full' />
                     </div>

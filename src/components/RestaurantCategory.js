@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CategoryItemList from './CategoryItemList';
 
-const RestaurantCategory = ({ categoryItem }) => {
-    const [show, setShow] = useState(false);
+const RestaurantCategory = ({ categoryItem, showItems, setShowIndex }) => {
 
     const handleHideShow = () => {
-        setShow(!show);
+        setShowIndex();
     };
+   
     return (
         <div>
             {/* HEader */}
@@ -16,7 +16,7 @@ const RestaurantCategory = ({ categoryItem }) => {
                     <span>⬇️</span>
                 </div>
                 {/* accordian  body*/}
-                {show && <CategoryItemList items={categoryItem.itemCards} />}
+                {showItems && <CategoryItemList items={categoryItem.itemCards} />}
             </div>
 
         </div>
