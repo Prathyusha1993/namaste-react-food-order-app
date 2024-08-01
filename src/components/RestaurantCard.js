@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../utils/UserContext';
 
 const RestaurantCard = (props) => {
     const {resName, cuisine, rating, time, image,cost} = props;
+    const {loggedInUser} = useContext(UserContext);
     return (
         <div className='m-4 p-4 w-[220px] bg-gray-50 rounded-lg hover:bg-gray-300'>
             <img className='rounded-lg' src={image} alt='res-logo' />
@@ -10,6 +12,7 @@ const RestaurantCard = (props) => {
             <h4>{rating} stars</h4>
             <h4>Rs.{cost} For TWO</h4>
             <h4>{time}</h4>
+            <h4>{loggedInUser}</h4>
         </div>
     )
 };

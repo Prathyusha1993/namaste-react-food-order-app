@@ -1,5 +1,5 @@
 import './App.css';
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
@@ -7,16 +7,32 @@ import Contact from './components/Contact';
 import Cart from './components/Cart';
 import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
+import UserContext from './utils/UserContext';
 
 const Grocery = lazy(() => import('./components/Grocery'));
 const About = lazy(() => import('./components/About'));
 
 const App = () => {
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+    //make an api call get userinfo data and update it
+    const data = {name: 'Prathyusha Kurigala'};
+    setUserName(data.name);
+  })
   return (
-    <div className="mode:bg-blue-900">
+    <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
+    <div className='app'>
       <Header />
       <Outlet />
+     
+    {/* This wil  change only for that paarticular component
+      <UserContext.Provider value={{loggedInUser: userName}}>  
+      <Header />
+      </UserContext.Provider>
+      <Outlet /> */}
     </div>
+    </UserContext.Provider>
   );
 };
 
