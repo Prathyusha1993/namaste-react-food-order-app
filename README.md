@@ -112,6 +112,27 @@ A change in the data used to render a React app. Usually the result of `setState
  * selector
  */
 
+ /**
+ * types of testing (developers can do):
+ * integration testing - multiple components talking to each other and events are happening in these components its called integartion tetsing
+ * unit testing - testing one unit or one compoennt is called as unit testing
+ * end to end testing - e2e testing - testing from entering to app to end of the app (like say login, exploring, adding to cart and checkout).
+*
+*
+* ------------------------------------------
+* Setting up testing in our app
+* install react testing librray
+* install jest 
+* install babel dependies
+* configure babel
+* jest configuration - command (npx jest --init)
+* install jsdom also if jest version is 28 or later
+* install @babel/preset-react to enable jsx inside test files
+* and also install @testing-library/jest-dom to work jsx inside the test files
+*/
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
