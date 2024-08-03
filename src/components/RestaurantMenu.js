@@ -24,17 +24,17 @@ const RestaurantMenu = () => {
         console.log(json);
     };
 
-    if(resMenuData.length === 0){
+    if(resMenuData && resMenuData.length === 0){
         return <Shimmer />;
     };
     console.log('resMenuData data', resMenuData);
 
   return (
     <div className='text-center'>
-       <h1 className='font-bold my-7 text-2xl'>{resMenuData.name}</h1>
-       <p className='font-bold text-lg'>{resMenuData.cuisines} Cuisine - {resMenuData.costForTwo} For Two.</p>
+       <h1 className='font-bold my-7 text-2xl'>{resMenuData && resMenuData.name}</h1>
+       <p className='font-bold text-lg'>{resMenuData && resMenuData.cuisines} Cuisine - {resMenuData && resMenuData.costForTwo} For Two.</p>
        <ul>
-        {resMenuData.cards?.map((categoryItem,index) => (
+        {resMenuData && resMenuData.cards?.map((categoryItem,index) => (
             <RestaurantCategory categoryItem={categoryItem} showItems={index === showIndex ? true : false} setShowIndex={() => setShowIndex(index)} setShowItems={setShowItems} />
         ))}
        </ul>

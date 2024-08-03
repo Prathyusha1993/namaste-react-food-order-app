@@ -37,7 +37,7 @@ export const Header = () => {
                 <li className='px-4'><Link to='/about'>About Us</Link></li>
                 <li className='px-4'><Link to='/contact'>Contact Us</Link></li>
                 <li className='px-4'><Link to='/grocery'>Grocery</Link></li>
-                <li className='px-4'><Link to='/cart'>🛒 ({cartItems.length} items)</Link></li>
+                <li className='px-4'><Link to='/cart'>Cart ({cartItems.length} items)</Link></li>
                 <li className='px-4'><button className='login' onClick={() => {btnName === 'Login' ? setBtnName('Logout') : setBtnName('Login')}}>{btnName}</button></li>
                 <li className='p-4 font-bold'>{loggedInUser}</li>
             </ul>

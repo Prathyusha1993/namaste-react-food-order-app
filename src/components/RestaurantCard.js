@@ -5,7 +5,7 @@ const RestaurantCard = (props) => {
     const {resName, cuisine, rating, time, image,cost} = props;
     const {loggedInUser} = useContext(UserContext);
     return (
-        <div className='m-4 p-4 w-[220px] bg-gray-50 rounded-lg hover:bg-gray-300'>
+        <div data-testid = 'resCard' className='m-4 p-4 w-[220px] bg-gray-50 rounded-lg hover:bg-gray-300'>
             <img className='rounded-lg' src={image} alt='res-logo' />
             <h3 className='font-bold py-2 text-md'>{resName}</h3>
             <h4>{cuisine}</h4>
